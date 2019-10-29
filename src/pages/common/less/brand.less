@@ -1,0 +1,71 @@
+.car-model-list{
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  >.car-model-list-content{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    >.list-group{
+      width: 100%;
+      height: auto;
+      >.list-group-title{
+        height: .62rem;
+        line-height: .62rem;
+        padding-left: .24rem;
+        font-size: .24rem;
+        color: #666666;
+        background: #f2f2f2;
+      }
+      >.list-group-item-box{
+        >.list-group-item{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          height: .88rem;
+          line-height: .88rem;
+          background: #fff;
+          border-bottom: 1px solid #f2f2f2;
+          >.name{
+            padding-left: .24rem;
+            color: #232323;
+            font-size: .28rem;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+  /* 字母序列 */
+  .list-shortcut{
+    position: fixed;
+    z-index: 30;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: .08rem 0 0 .08rem;
+    >.shorcut-tips{
+      position: fixed;
+      right: 1rem;
+      top: 43%;
+      font-size: .5rem;
+      font-weight: bolder;
+      color: #FFC40A;
+    }
+    >.shortcut{
+      >.item{
+        width: .45rem;
+        height: .44rem;
+        color: #232323;
+        font-size: .24rem;
+      }
+    }
+  }
+}
+
